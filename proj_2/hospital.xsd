@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+
+
+    <xsd:simpleType name="floors">
+	<xsd:restriction base="xsd:integer">
+	<xsd:minInclusive value="0"/>
+	<xsd:maxInclusive value="5"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="hospital_rooms">
+	<xsd:restriction base="xsd:integer">
+	<xsd:minInclusive value="0"/>
+	<xsd:maxInclusive value="250"/>
+	</xsd:restriction>
+</xsd:simpleType>
+
+<xsd:simpleType name="dectype">
+  <xsd:restriction base="xsd:decimal"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="datetype">
+	<xsd:restriction base="xsd:date"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="durationtype">
+	<xsd:restriction base="xsd:duration"/>
+</xsd:simpleType>
+
+<xsd:simpleType name="booleantype">
+	<xsd:restriction base="xsd:boolean"/>
+</xsd:simpleType>
+
+<xsd:group name="person">
+	<xsd:sequence>
+  		<xsd:element name="surname"  type="xsd:string" />
+		<xsd:element name="name" type="xsd:string" />
+	</xsd:sequence>
+</xsd:group>
+
+<xsd:attributeGroup name="unit">
+	<xsd:attribute name="ward_nurse" type="xsd:string" use="required"/>
+</xsd:attributeGroup>
+
+<xsd:attributeGroup name="nfz">
+	<xsd:attribute name="on_nfz" type="booleantype" default="1"/>
+</xsd:attributeGroup>
+
+<xsd:complexType name="patient_type">
+                                                                     <xsd:sequence>
+                                                                              <xsd:group ref="person"/>
+                                                                              <xsd:element name="pesel"> 
+                                                                           <xsd:simpleType>
+                                                                               <xsd:restriction base="xsd:integer">
+                                                                                 <xsd:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                                                                               </xsd:restriction>
+                                                                             </xsd:simpleType>
+                                                                           </xsd:element>
+										<xsd:element name="unit" type="xsd:string" />
+                                                                                <xsd:element name="floor" type="floors" />
+                                                                                <xsd:element name="hospital_room" type="hospital_rooms" />
+									 	<xsd:element name="heal_time" type="durationtype" />
+										<xsd:element name="birth_date" type="datetype" />
+										<xsd:element name="on_nfz" type="booleantype" />
+										<xsd:element name="cost" type="dectype" />
+
+									</xsd:sequence>
+								</xsd:complexType>
+
+     <xsd:element name="hospital">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="patient_list">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Patient"
+								type="patient_type" maxOccurs="unbounded"
+								minOccurs="0">
+								
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+
+					<xsd:key name="patient_key">
+						<xsd:selector xpath="Patient" />
+						<xsd:field xpath="pesel" />
+					</xsd:key>
+
+					<xsd:unique name="complex_key">
+						<xsd:selector xpath="Patient" />
+						<xsd:field xpath="Name" />
+						<xsd:field xpath="Surname" />
+						<xsd:field xpath="@floor" />
+						<xsd:field xpath="@hospital_room_number" />
+					</xsd:unique>
+				</xsd:element>
+
+				<xsd:element name="unit" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:all>
+							<xsd:element name="type" type="xsd:string" />
+                            <xsd:element name="ward_doctor" type="xsd:string" />
+						</xsd:all>
+						<xsd:attributeGroup ref="unit"/>
+					</xsd:complexType>
+
+				</xsd:element>
+
+			</xsd:sequence>
+		</xsd:complexType>
+
+		<xsd:unique name="key_surname_name">
+			<xsd:selector xpath="patient_list/Patient" />
+			<xsd:field xpath="surname" />
+			<xsd:field xpath="name" />
+		</xsd:unique>
+		<xsd:key name="unit_number">
+			<xsd:selector xpath="unit" />
+			<xsd:field xpath="@ward_nurse" />
+		</xsd:key>
+
+		<xsd:keyref name="num_unit" refer="unit_number">
+			<xsd:selector xpath="patient_list/Patient" />
+			<xsd:field xpath="unit_nr" />
+		</xsd:keyref>
+	</xsd:element>
+</xsd:schema>

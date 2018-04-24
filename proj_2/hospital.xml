@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="sportowcy.xsd">
+	<patient_list>
+		<Patient>
+			<surname>Jeziurski</surname>
+			<name>Nikodem</name>
+			<pesel>97021901777</pesel>
+			<unit>OIOM</unit>
+			<floor>1</floor>
+			<hospital_room>12</hospital_room>
+			<heal_time>P20D</heal_time>
+			<birth_date>1997-02-01</birth_date>
+			<on_nfz>1</on_nfz>
+			<cost>4000</cost>
+		</Patient>
+		<Patient>
+			<surname>Juliusz</surname>
+			<name>Korczakowski</name>
+			<pesel>97021901772</pesel>
+			<unit>Chirugy</unit>
+			<floor>2</floor>
+			<hospital_room>24</hospital_room>
+            <heal_time>PT8H</heal_time>
+			<birth_date>1994-05-07</birth_date>
+			<on_nfz>0</on_nfz>
+			<cost>20000.25</cost>
+		</Patient>
+    </patient_list>
+
+	<unit ward_nurse="Eliszebeth Nowaczykke">
+		<type>OIOM</type>
+        <ward_doctor>Michail Kovalski</ward_doctor>
+	</unit>
+	<unit ward_nurse="Hannah Masurke">
+		<type>Chirurgy</type>
+        <ward_doctor>Stanislav Grams</ward_doctor>
+	</unit>
+
+
+</hospital>
