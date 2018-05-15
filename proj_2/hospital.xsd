@@ -41,6 +41,17 @@
 	</xsd:sequence>
 </xsd:group>
 
+<xsd:group name="pesel">
+    <xsd:sequence>
+   <xsd:element name="pesel"> 
+    <xsd:simpleType>
+     <xsd:restriction base="xsd:integer">
+      <xsd:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+     </xsd:restriction>
+    </xsd:simpleType>
+</xsd:element>
+</xsd:sequence>
+   </xsd:group>
 <xsd:attributeGroup name="unit">
 	<xsd:attribute name="ward_nurse" type="xsd:string" use="required"/>
 </xsd:attributeGroup>
@@ -50,40 +61,35 @@
 </xsd:attributeGroup>
 
 <xsd:complexType name="patient_type">
-                                                                     <xsd:sequence>
-                                                                              <xsd:group ref="person"/>
-                                                                              <xsd:element name="pesel"> 
-                                                                           <xsd:simpleType>
-                                                                               <xsd:restriction base="xsd:integer">
-                                                                                 <xsd:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
-                                                                               </xsd:restriction>
-                                                                             </xsd:simpleType>
-                                                                           </xsd:element>
-										<xsd:element name="unit" type="xsd:string" />
-                                                                                <xsd:element name="floor" type="floors" />
-                                                                                <xsd:element name="hospital_room" type="hospital_rooms" />
-									 	<xsd:element name="heal_time" type="durationtype" />
-										<xsd:element name="birth_date" type="datetype" />
-										<xsd:element name="on_nfz" type="booleantype" />
-										<xsd:element name="cost" type="dectype" />
+ <xsd:sequence>
+     <xsd:group ref="person"/>
+     <xsd:group ref="pesel"/>
+    <xsd:element name="unit" type="xsd:string" />
+    <xsd:element name="floor" type="floors" />
+    <xsd:element name="hospital_room" type="hospital_rooms" />
+    <xsd:element name="heal_time" type="durationtype" />
+    <xsd:element name="birth_date" type="datetype" />
+    <xsd:element name="on_nfz" type="booleantype" />
+    <xsd:element name="cost" type="dectype" />
+   </xsd:sequence>
+   </xsd:complexType>
 
-									</xsd:sequence>
-								</xsd:complexType>
+
+
+     <xsd:complexType name="patient_list_type">
+         <xsd:sequence>
+             <xsd:element name="Patient" type="patient__type" maxOccurs="unbounded" minOccurs="0"/>
+         </xsd:sequence>
+     </xsd:complexType>
+
 
      <xsd:element name="hospital">
-		<xsd:complexType>
-			<xsd:sequence>
-				<xsd:element name="patient_list">
-					<xsd:complexType>
-						<xsd:sequence>
-							<xsd:element name="Patient"
-								type="patient_type" maxOccurs="unbounded"
-								minOccurs="0">
-								
-							</xsd:element>
-						</xsd:sequence>
-					</xsd:complexType>
-
+         <xsd:complexType>
+         <xsd:sequence>
+             <xsd:element name="patient" type="patient_list_type">
+         </xsd:element>
+                        </xsd:sequence>
+     </xsd:complexType>
 					<xsd:key name="patient_key">
 						<xsd:selector xpath="Patient" />
 						<xsd:field xpath="pesel" />
@@ -96,7 +102,6 @@
 						<xsd:field xpath="@floor" />
 						<xsd:field xpath="@hospital_room_number" />
 					</xsd:unique>
-				</xsd:element>
 
 				<xsd:element name="unit" maxOccurs="unbounded">
 					<xsd:complexType>
@@ -106,11 +111,8 @@
 						</xsd:all>
 						<xsd:attributeGroup ref="unit"/>
 					</xsd:complexType>
+                </xsd:element>
 
-				</xsd:element>
-
-			</xsd:sequence>
-		</xsd:complexType>
 
 		<xsd:unique name="key_surname_name">
 			<xsd:selector xpath="patient_list/Patient" />

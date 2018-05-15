@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<samochody>
+    <standard nazwa="wysoki">
+        <samochod cena="151000" marka="audi"/>
+        <samochod cena="121000" marka="ford"/>
+        <samochod cena="301000" marka="mercedes"/>
+        <samochod cena="91000" marka="fiat"/>
+        <samochod cena="231000" marka="volvo"/>
+    </standard>
+    <standard nazwa="podstawowy">
+        <samochod cena="71000" marka="audi"/>
+        <samochod cena="51000" marka="ford"/>
+        <samochod cena="101000" marka="mercedes"/>
+        <samochod cena="31000" marka="fiat"/>
+        <samochod cena="86000" marka="volvo"/>
+    </standard>
+    <standard nazwa="podwyzszony">
+        <samochod cena="91000" marka="audi"/>
+        <samochod cena="76000" marka="ford"/>
+        <samochod cena="151000" marka="mercedes"/>
+        <samochod cena="51000" marka="fiat"/>
+        <samochod cena="151000" marka="volvo"/>
+    </standard>
+</samochody>
