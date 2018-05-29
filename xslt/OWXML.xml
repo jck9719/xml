@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='OWStyleSheet.xsl'?>
+<Overwatch>
+  <Heroes>
+    <Hero Id="S" Country="Egypt" xml:lang="en">
+      <Name>Ana</Name>
+      <Role>Support</Role>
+      <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>3.68</Pickrate>
+      <Winrate>46.15</Winrate>
+      <Ultimate>Nano Boost</Ultimate>
+      <Quote>More lost than the moon in winter. </Quote>
+    </Hero>
+        <Hero Id="D" Country="" xml:lang="un">
+      <Name>Bastion</Name>
+      <Role>Defense</Role>
+      <Health>200</Health>
+      <Armor>100</Armor>
+      <Shield>0</Shield>
+      <Pickrate>0.55</Pickrate>
+      <Winrate>49.84</Winrate>
+      <Ultimate>Configuration: Tank</Ultimate>
+      <Quote>W-w-wooooo...?</Quote>
+    </Hero>
+        <Hero Id="S" Country="Sweden" xml:lang="swe">
+      <Name>Brigitte</Name>
+      <Role>Support</Role>
+            <Health>200</Health>
+      <Armor>50</Armor>
+      <Shield>0</Shield>
+      <Pickrate>4.04</Pickrate>
+      <Winrate>57.32</Winrate>
+      <Ultimate>Rally</Ultimate>
+      <Quote>Låt proffsen sköta det här.</Quote>
+    </Hero>
+        <Hero Id="T" Country="South Korea" xml:lang="kr">
+      <Name>D.va</Name>
+      <Role>Tank</Role>
+            <Health>400</Health>
+      <Armor>200</Armor>
+      <Shield>0</Shield>
+      <Pickrate>7.50</Pickrate>
+      <Winrate>50.44</Winrate>
+      <Ultimate>Self-Destruct</Ultimate>
+      <Quote>Geim-eul hamyeon, igyeoyaji.</Quote>
+    </Hero>
+        <Hero Id="O" Country="Nigeria" xml:lang="en">
+      <Name>Doomfist</Name>
+      <Role>Offense</Role>
+            <Health>250</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>1.28</Pickrate>
+      <Winrate>51.11</Winrate>
+      <Ultimate>Meteor Strike</Ultimate>
+      <Quote>Go and sit down.</Quote>
+    </Hero>
+        <Hero Id="O" Country="Japan" xml:lang="en">
+      <Name>Genji</Name>
+      <Role>Offense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>4.30</Pickrate>
+      <Winrate>49.83</Winrate>
+      <Ultimate>Dragonblade</Ultimate>
+      <Quote>Hah! Simple.</Quote>
+    </Hero>
+        <Hero Id="D" Country="Japan" xml:lang="jp">
+      <Name>Hanzo</Name>
+      <Role>Defense</Role>
+      <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>3.56</Pickrate>
+      <Winrate>49.93</Winrate>
+      <Ultimate>Dragonstrike</Ultimate>
+      <Quote>Ryū ga waga teki wo kurau!</Quote>
+          </Hero>
+        <Hero Id="D" Country="Australia" xml:lang="en">
+      <Name>Junkrat</Name>
+      <Role>Defense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>4.34</Pickrate>
+      <Winrate>50.35</Winrate>
+      <Ultimate>RIP-Tire</Ultimate>
+      <Quote>Happy birthday.</Quote>
+    </Hero>
+        <Hero Id="S" Country="Brazil" xml:lang="en">
+      <Name>Lúcio</Name>
+      <Role>Support</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>3.76</Pickrate>
+      <Winrate>49.67</Winrate>
+      <Ultimate>Sound Barrier</Ultimate>
+      <Quote>Why are you so angry?</Quote>
+    </Hero>
+        <Hero Id="O" Country="USA" xml:lang="en">
+      <Name>McCree</Name>
+      <Role>Offense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>3.59</Pickrate>
+      <Winrate>48.06</Winrate>
+      <Ultimate>Deadeye</Ultimate>
+      <Quote>Buckle up.</Quote>
+    </Hero>
+            <Hero Id="D" Country="China" xml:lang="en">
+      <Name>Mei</Name>
+      <Role>Defense</Role>
+            <Health>250</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>0.93</Pickrate>
+      <Winrate>50.53</Winrate>
+      <Ultimate>Blizzard</Ultimate>
+      <Quote>I got you something!</Quote>
+    </Hero>
+            <Hero Id="S" Country="Switzerland" xml:lang="de">
+      <Name>Mercy</Name>
+      <Role>Support</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>9.27</Pickrate>
+      <Winrate>50.35</Winrate>
+      <Ultimate>Valkyrie</Ultimate>
+      <Quote>Sprechstunde bei der Frau Doktor.</Quote>
+    </Hero>
+            <Hero Id="S" Country="Ireland" xml:lang="ir">
+      <Name>Moira</Name>
+      <Role>Support</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>8.61</Pickrate>
+      <Winrate>50.29</Winrate>
+      <Ultimate>Coalescence</Ultimate>
+      <Quote>Nollaig shona duit.</Quote>
+    </Hero>
+            <Hero Id="T" Country="Numbani" xml:lang="en">
+      <Name>Orisa</Name>
+      <Role>Tank</Role>
+            <Health>200</Health>
+      <Armor>200</Armor>
+      <Shield>0</Shield>
+      <Pickrate>2.60</Pickrate>
+      <Winrate>51.79</Winrate>
+      <Ultimate>Supercharger</Ultimate>
+      <Quote>That does not compute.</Quote>
+    </Hero>
+            <Hero Id="O" Country="Egypt" xml:lang="en">
+      <Name>Pharah</Name>
+      <Role>Offense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>2.86</Pickrate>
+      <Winrate>50.91</Winrate>
+      <Ultimate>Barrage</Ultimate>
+      <Quote>You're going to come with me, dead or alive.</Quote>
+    </Hero>
+            <Hero Id="O" Country="USA" xml:lang="en">
+      <Name>Reaper</Name>
+      <Role>Offense</Role>
+            <Health>250</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>2.51</Pickrate>
+      <Winrate>50.56</Winrate>
+      <Ultimate>Death Blossom</Ultimate>
+      <Quote>It's in the refrigerator.</Quote>
+    </Hero>
+            <Hero Id="T" Country="Germany" xml:lang="en">
+      <Name>Reinhardt</Name>
+      <Role>Tank</Role>
+            <Health>300</Health>
+      <Armor>200</Armor>
+      <Shield>0</Shield>
+      <Pickrate>8.27</Pickrate>
+      <Winrate>52.02</Winrate>
+      <Ultimate>Earthshatter</Ultimate>
+      <Quote>100% German power!</Quote>
+    </Hero>
+            <Hero Id="T" Country="Australia" xml:lang="en">
+      <Name>Roadhog</Name>
+      <Role>Tank</Role>
+            <Health>600</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>4.26</Pickrate>
+      <Winrate>49.14</Winrate>
+      <Ultimate>Whole Hog</Ultimate>
+      <Quote>Say "bacon" one more time.</Quote>
+    </Hero>
+            <Hero Id="O" Country="USA" xml:lang="en">
+      <Name>Soldier: 76</Name>
+      <Role>Offense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>3.20</Pickrate>
+      <Winrate>48.92</Winrate>
+      <Ultimate>Tactical Visor</Ultimate>
+      <Quote>You're the boss.</Quote>
+    </Hero>
+            <Hero Id="O" Country="Mexico" xml:lang="en">
+      <Name>Sombra</Name>
+      <Role>Offense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>0.62</Pickrate>
+      <Winrate>45.65</Winrate>
+      <Ultimate>EMP</Ultimate>
+      <Quote>You're in the doghouse.</Quote>
+    </Hero>
+            <Hero Id="S" Country="India" xml:lang="en">
+      <Name>Symmetra</Name>
+      <Role>Support</Role>
+            <Health>100</Health>
+      <Armor>0</Armor>
+      <Shield>100</Shield>
+      <Pickrate>0.75</Pickrate>
+      <Winrate>59.62</Winrate>
+      <Ultimate>Teleporter/Shield Generator</Ultimate>
+      <Quote>Victory is everything.</Quote>
+    </Hero>
+            <Hero Id="D" Country="Sweden" xml:lang="en">
+      <Name>Torbjörn</Name>
+      <Role>Defense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>0.68</Pickrate>
+      <Winrate>54.54</Winrate>
+      <Ultimate>Molten Core</Ultimate>
+      <Quote>For the last time, I'm Swedish!</Quote>
+    </Hero>
+            <Hero Id="O" Country="United Kingdom" xml:lang="en">
+      <Name>Tracer</Name>
+      <Role>Offense</Role>
+            <Health>150</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>3.69</Pickrate>
+      <Winrate>49.06</Winrate>
+      <Ultimate>Pulse Bomb</Ultimate>
+      <Quote>Cheers, love! The cavalry's here.</Quote>
+    </Hero>
+            <Hero Id="D" Country="France" xml:lang="fr">
+      <Name>Widowmaker</Name>
+      <Role>Defense</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>0</Shield>
+      <Pickrate>2.79</Pickrate>
+      <Winrate>48.83</Winrate>
+      <Ultimate>Infra-Sight</Ultimate>
+      <Quote>À la vie, à la mort.</Quote>
+    </Hero>
+            <Hero Id="T" Country="" xml:lang="en">
+      <Name>Winston</Name>
+      <Role>Tank</Role>
+            <Health>500</Health>
+      <Armor>100</Armor>
+      <Shield>0</Shield>
+      <Pickrate>3.68</Pickrate>
+      <Winrate>48.37</Winrate>
+      <Ultimate>Primal Rage</Ultimate>
+      <Quote>Houston, uhh, we have a problem.</Quote>
+    </Hero>
+            <Hero Id="T" Country="Russia" xml:lang="ru">
+      <Name>Zarya</Name>
+      <Role>Tank</Role>
+            <Health>200</Health>
+      <Armor>0</Armor>
+      <Shield>200</Shield>
+      <Pickrate>3.76</Pickrate>
+      <Winrate>50.45</Winrate>
+      <Ultimate>Graviton Surge</Ultimate>
+      <Quote>Vmeste my sila.</Quote>
+    </Hero>
+            <Hero Id="S" Country="Nepal" xml:lang="en">
+      <Name>Zenyatta</Name>
+      <Role>Support</Role>
+            <Health>50</Health>
+      <Armor>0</Armor>
+      <Shield>100</Shield>
+      <Pickrate>4.90</Pickrate>
+      <Winrate>52.34</Winrate>
+      <Ultimate>Transcendence</Ultimate>
+      <Quote>The Iris embraces you.</Quote>
+    </Hero>
+  </Heroes>
+</Overwatch>

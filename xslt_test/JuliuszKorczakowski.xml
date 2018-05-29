@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Juliusz Korczakowski!-->
+<!--grupa A!-->
+<sklep>
+<pracownicy>
+ <pracownik>
+	<imie plec="m">Krzysztof</imie>
+	<nazwisko>Zielony</nazwisko>
+	<wiek>20</wiek>
+ </pracownik>
+ <pracownik>
+	<imie plec="m">Pawel</imie>
+    <nazwisko>Gawel</nazwisko>
+	<wiek>33</wiek>
+ </pracownik>
+ <pracownik>
+	<imie plec="k">Grazyna</imie>
+    <nazwisko>Samsonowicz</nazwisko>
+	<wiek>32</wiek>
+ </pracownik>
+ </pracownicy>
+<artykuly>
+<dzial id="a1">
+	<proszek>
+	  <ilosc>350</ilosc>
+	<cena waluta="EUR">10</cena>
+	<kraj>Niemcy</kraj>
+	</proszek>
+    <ludwik>
+		<ilosc>20</ilosc>
+		<cena waluta="PLN">25</cena>
+		<kraj>Polska</kraj>
+	</ludwik>
+	<worki>
+	 <ilosc>60</ilosc>
+	 <cena waluta="PLN">10</cena>
+	 <kraj>Polska</kraj>
+	</worki>
+	<szczoteczka>
+		 <ilosc>50</ilosc>
+		 <cena waluta="PLN">20</cena>
+		 <kraj>Polska</kraj>
+	 </szczoteczka>
+</dzial>
+<dzial id="a2">
+	<wiskas>
+		<ilosc>120</ilosc>
+		<cena waluta="EUR">30</cena>
+		<kraj>Belgia</kraj>
+	</wiskas>
+</dzial>	
+	 </artykuly>
+</sklep>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<szpital>
+    <wykaz id="a01" zatwierdzony="true">
+        <typ>Lista</typ>
+        <apteka>Prywatna</apteka>
+        <typ>
+            <recepta>
+                <lek>
+                    <nazwa>Asertin 50</nazwa>
+                    <producent>Biofarm</producent>
+                    <substancja_czynna>Sertralina</substancja_czynna>
+                    <cena>13.48</cena>
+                </lek>
+                <lek>
+                    <nazwa>Hydroxyzinum Espefa</nazwa>
+                    <producent>Espefa</producent>
+                    <substancja_czynna>Hydroksyzyna</substancja_czynna>
+                    <cena>7.49</cena>
+                </lek>
+                <lek>
+                    <nazwa>Clonazepamum TZF</nazwa>
+                    <producent>Polfa Tarchomin</producent>
+                    <substancja_czynna>Klonazepam</substancja_czynna>
+                    <cena>3.20</cena>
+                </lek>
+                <lek>
+                    <nazwa>Biobran</nazwa>
+                    <producent>Sandoz</producent>
+                    <substancja_czynna>Bibran</substancja_czynna>
+                    <cena>1335.00</cena>
+                </lek>
+            </recepta>
+            <bezrecepta>
+                <lek>
+                    <nazwa>Aspirin</nazwa>
+                    <producent>Bayer</producent>
+                    <substancja_czynna>Kwas Acetylosalicylowy</substancja_czynna>
+                    <cena>6.37</cena>
+                </lek>
+                <lek>
+                    <nazwa>Ibum</nazwa>
+                    <producent>Hasco-Lek</producent>
+                    <substancja_czynna>ibuprofen</substancja_czynna>
+                    <cena>20.99</cena>
+                </lek>
+                <lek>
+                    <nazwa>Sudafed</nazwa>
+                    <producent>McNeil</producent>
+                    <substancja_czynna>Pseudoefedryna</substancja_czynna>
+                    <cena>13.56</cena>
+                </lek>
+            </bezrecepta>
+        </typ>
+    </wykaz>
+</szpital>
